@@ -7,11 +7,9 @@ float hall_thresh = 100.0;
 // 初始化執行一次
 void setup()
 {
-  // initialize serial communication at 9600 bits per second:
   // 初始化序列阜通訊速率為 115200
   Serial.begin(115200);
 
-  // make the hall pin an input:
   // 設定 HALL_PIN 腳位為輸入腳位
   pinMode(HALL_PIN, INPUT);
 
@@ -84,5 +82,5 @@ void loop()
   analogWrite(PWM_PIN, output);
 
   // 等待 1 毫秒持續執行程式
-  delay(1); // delay in between reads for stability
+  delay(1);
 }
